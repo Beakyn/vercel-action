@@ -145,7 +145,7 @@ async function vercelDeploy(ref, commit) {
     args.push('--scope', vercelScope);
   }
 
-  await exec.exec('npx', ['vercel', ...args], options);
+  await exec.exec('npx', ['vercel@25.0.1', ...args], options);
 
   return myOutput;
 }
